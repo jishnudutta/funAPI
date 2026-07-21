@@ -1,9 +1,10 @@
 [project]
 name = "funapi"
 version = "0.1.0"
-description = "Add your description here"
+description = "A fun FastAPI project featuring dice rolls, coin flips, and beautiful random gradient generation."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.139.2",
+    "uvicorn[standard]>=0.35.0",
 ]
