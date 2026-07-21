@@ -1,0 +1,8 @@
+services:
+  fun-api:
+    build: .
+    container_name: fun-api
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
