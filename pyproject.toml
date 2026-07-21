@@ -5,6 +5,6 @@ description = "A fun FastAPI project featuring dice rolls, coin flips, and beaut
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "fastapi>=0.139.2",
+    "fastapi[standard]>=0.139.2",
     "uvicorn[standard]>=0.35.0",
 ]
