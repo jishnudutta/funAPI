@@ -177,7 +177,7 @@ async def flip():
     return{"coin":coin}
 
 @app.get("/flip/{count}")
-async def flip(count:int):
+async def flip_multiple (count:int):
     if count < 1 or count > 200:
         raise HTTPException(
             status_code=400,
@@ -307,7 +307,7 @@ GRADIENTS = [
 ]
 
 @app.get("/gradient/json")
-async def gradient():
+async def gradient_json():
     gradientColor = random.choice(GRADIENTS)
     angle = random.randint(1,360)
     color1 = gradientColor['colors'][0]
@@ -324,7 +324,7 @@ async def gradient():
 }
 
 @app.get("/gradient", response_class=HTMLResponse)
-async def gradient():
+async def gradient_html():
     gradientColor = random.choice(GRADIENTS)
     angle = random.randint(1,360)
     color1 = gradientColor['colors'][0]
